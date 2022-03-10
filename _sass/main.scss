@@ -1,3 +1,74 @@
-.current{
-color: green;
+$font-stack: "Times New Roman", sans-serif;
+$primary-color: black;
+$primary-color-button: white;
+$background-color-button: gray;
+
+body, html{
+height: 100%;
+font:100% $font-stack;
+color: $primary-color;
+}
+
+.hero-image{
+background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/images/keyboard.png');
+height: 20%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text{
+text-align: left;
+position: absolute;
+left: 1%;
+color: white;
+}
+
+.nav{
+    margin: 1rem;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+
+    & a{
+    color: white;
+    background-color: $background-color-button;
+    display: inline-block;
+    padding: 2px 20px;
+    border-radius: 4px;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        background: red;
+        transition: all 0.3s;
+        border-radius: 4px;
+    }
+    
+    &:hover::after{
+        width: 100%;
+    }
+    
+    &img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    &.current{
+        background-color: red;
+    }
+    
+    }
 }

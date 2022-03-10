@@ -1,6 +1,7 @@
 ---
 layout: post
-author: jonathan
+title: First Post
+author: Jonathan
 ---
 
-This a test post to check out the blogging features of jekyll.
+#### This a test post to check out the blogging features of jekyll.
