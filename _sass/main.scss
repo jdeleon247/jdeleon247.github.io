@@ -1,29 +1,52 @@
 $font-stack: "Helvetica", sans-serif;
-$primary-color: black;
+$primary-font-color: white;
 $primary-color-button: white;
 $background-color-button: gray;
 
-body, html{
-height: 100%;
+a:hover{
+    background: white;
+}
+
+html{
 font:100% $font-stack;
-color: $primary-color;
+color: $primary-font-color;
+margin: auto;
+width: 75%;
+height: 100%;
+padding:10px;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+body{
+font:100% $font-stack;
+color: $primary-font-color;
+margin: auto;
+width: 75%;
+height: auto;
+padding:10px;
+background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-image{
 background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/images/keyboard.png');
-height: 20%;
-
+height: 50%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+padding: 10px;
 position: relative;
+
+&::hero-text{
+    text-align: left;
+    position: absolute;
+    left: 1%;
+    color: white;
+    }
+
 }
 
-.hero-text{
-text-align: left;
-position: absolute;
-left: 1%;
-color: white;
+h2{
+    color: white;
 }
 
 .nav{
@@ -53,7 +76,7 @@ color: white;
             width: 0;
             height: 100%;
             z-index: -1;
-            background: red;
+            background: rgb(64, 116, 128);
             transition: all 0.3s;
             border-radius: 4px;
         }
@@ -68,7 +91,7 @@ color: white;
         }
         
         &.current{
-            background-color: red;
+            background-color: rgb(64, 116, 128);
         }
 
     }
