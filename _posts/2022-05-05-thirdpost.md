@@ -19,3 +19,5 @@ Relatively straightforward code, but surprisingly effective once you have create
 Another portion I wanted to go deeper into was the transition between ragdoll and a controlled character, something you see in a lot of sandbox type games, but I was unfortunately unable to dedicate much time to that research. Instead I worked on a basic character controller that uses ternary operations to provide a relatively easy to understand interface for triggering animations in a blend tree:
 
 ![image](/assets/images/movement_code.png)
+
+<img src="/assets/images/GitHub-Mark-Light-32px.png"> [Github link to project](https://github.com/jdeleon247/ragdoll-experiment)

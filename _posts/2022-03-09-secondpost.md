@@ -34,3 +34,5 @@ This project has definitely been an exercise in patience, as a huge portion of m
 
 <img src="/assets/images/hmm.png" alt="hmm.png" width="50"/>
  < me when trying to figure out how to make this site.
+
+<img src="/assets/images/GitHub-Mark-Light-32px.png"> [Github link to project](https://github.com/jdeleon247/jdeleon247.github.io)
