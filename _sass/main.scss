@@ -3,10 +3,6 @@ $primary-font-color: white;
 $primary-color-button: white;
 $background-color-button: gray;
 
-a:hover{
-    background: white;
-}
-
 html{
 font:100% $font-stack;
 color: $primary-font-color;
@@ -20,11 +16,14 @@ background-color: rgba(0, 0, 0, 0.6);
 body{
 font:100% $font-stack;
 color: $primary-font-color;
-margin: auto;
 width: 75%;
-height: auto;
+min-height: 100%;
 padding:10px;
 background-color: rgba(0, 0, 0, 0.6);
+}
+
+img{
+    max-width: 100%;
 }
 
 .hero-image{
@@ -33,7 +32,7 @@ height: 50%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-padding: 10px;
+padding: 15px;
 position: relative;
 
 &::hero-text{
@@ -47,6 +46,27 @@ position: relative;
 
 h2{
     color: white;
+}
+
+a{
+    outline:none;
+    text-decoration: none;
+}
+
+a:link{
+    color:#407480
+}
+
+a:visited{
+    color: #c7afff;
+}
+
+a:focus{
+    background: #c7afff;
+}
+  
+a:hover{
+background: #ff770060;
 }
 
 .nav{
@@ -76,7 +96,7 @@ h2{
             width: 0;
             height: 100%;
             z-index: -1;
-            background: rgb(64, 116, 128);
+            background: #407480;
             transition: all 0.3s;
             border-radius: 4px;
         }
@@ -96,3 +116,4 @@ h2{
 
     }
 }
+
