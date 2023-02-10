@@ -4,11 +4,12 @@ title: About
 ---
 <link rel="stylesheet" href="/assets/css/styles.css">
 
-### Hello! Welcome to my portfolio site! 
+### Hello! Welcome to my website!
 
 <p>My name is Jonathan DeLeon and I recently graduated as a Game Programmer from Champlain College.</p>
 
-<a href="/assets/files/resume.pdf" download> Resume PDF</a>
+<embed src= "/assets/files/resume.pdf" width="500" height="375" 
+ type="application/pdf">
 
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
